@@ -1,0 +1,74 @@
+.nav {
+    background-image: linear-gradient(to bottom, #2c383c 0%,#2a363a 100%);
+
+    & > ul {
+        width: 100%;
+        list-style: none;
+        margin-bottom: 0;
+        background-color: transparent;
+
+        & > li {
+            font-family: 'Lato';
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 300;
+            display: inline-block;
+            width: 100%;
+            position: relative;
+            cursor: pointer;
+
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 1px;
+                visibility: hidden;
+                background-color: $color-orange;
+                transition: transform .2s,
+                            width .4s,
+                            background-color .1s,
+                            visibility .9s;
+            }
+    
+            &:hover::before {
+                visibility: visible;
+                width: 100%;
+            }
+
+            &:hover button {
+                transform: translateX(7px);
+            }
+            
+            & > button {
+                width: 100%;
+                padding: 15px 15px;
+                background-color: transparent;
+                border: none;
+                color: $color-white;
+                text-align: left;
+                position: relative;
+                z-index:1;
+                backface-visibility: hidden;
+                transition: all .2s;
+
+                &:focus {
+                    outline: none;
+                }
+
+                & > i {
+                    margin-right: 2rem;
+                }
+            }
+        }
+    }
+
+    .active {
+        background-color: $color-orange;
+        
+        & > button {
+            transform: translateX(7px);
+        }
+    }
+}
