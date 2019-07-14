@@ -1,0 +1,32 @@
+.footer {
+    list-style: none;
+    padding: 15px 20px;
+    margin-bottom: 0;
+
+    & > li {
+        backface-visibility: hidden;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+
+        & > a {
+            
+            &:link,
+            &:visited { 
+                text-decoration:none;
+                color: $color-white;
+                font-size: 16px;
+                display: inline-block;
+                transform: translateY(0);
+                transition: all .2s;
+            }
+
+            &:hover {
+                color: $color-orange;
+                transform: translateY(-2px);
+            }
+
+        }
+    }
+}
