@@ -19,5 +19,14 @@
             width: 100%;
             height: 100%;
         }
+
+        & > .row > .col-md-3 {
+            background-image: linear-gradient(to bottom, #2c383c 0%,#2a363a 100%);
+        }
+
+        & > .row > .col-md-9 {
+            height: 554px;
+            overflow-y: scroll;
+        }
     }
 }
