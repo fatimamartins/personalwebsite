@@ -1,5 +1,5 @@
 import React from 'react';
-import Route from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import './assets/sass/main.scss';
 import ProfilePicture from './components/ProfilePicture/ProfilePicture';
 import NavBar from './components/NavBar/NavBar';
