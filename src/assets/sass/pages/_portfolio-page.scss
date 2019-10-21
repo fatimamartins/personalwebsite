@@ -1,0 +1,131 @@
+.portfolio-page {
+
+    @include respond (tablets-port) {
+        height: 62vh;
+        overflow-y: scroll;
+    }
+
+    & > h3 {
+        padding: 2rem 3rem 0 3rem;
+    }
+
+    &__works {
+        position: relative;
+        padding: 0 3rem 2rem 3rem;
+
+        &:not(:first-child) {
+            margin-top: 2rem;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: 30px;
+            top: 22px;
+            height: 1px;
+            width: 23px;
+            background: $color-orange;
+        }
+
+        & > h4 {
+            padding-left: 35px;
+        }
+
+        .card {
+            perspective: 150rem; 
+            -moz-perspective: 150rem; 
+            position: relative;
+            height: 25rem;
+            width: 19rem;
+            margin-top: 2rem;
+            border-radius: 3px;
+            border: none;
+            background-color:  $background-light;
+            overflow: hidden;
+
+            &:not(last-child) {
+                margin-right: 2.5rem;
+            }
+
+            &__side {
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                backface-visibility: hidden;
+                transition: all 1s ease;
+
+                &--front {
+                    z-index: 1;
+        
+                    .card__picture {
+                        background-size: cover; 
+                        height: 100%;                    
+            
+                        &-bookasleep {
+                            background-image: linear-gradient(to right bottom, $color-orange,$color-orange-dark);
+                        }
+        
+                        &-habitects {
+                            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/habitects.png);
+                        }
+
+                        &-omnifood {
+                            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/omnifood.png);
+                        }
+
+                        &-1 {
+                            background-image: linear-gradient(to right bottom, $color-orange,$color-orange-dark);
+                        }
+                    }
+                }
+        
+                &--back {
+                    transform: rotateY(180deg); 
+                    padding: 1.5rem 2rem;
+                    color: $color-white;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+        
+                    &-1 {
+                        background-image: linear-gradient(to right bottom, $color-orange,$color-orange-dark);
+                    }
+        
+                    &-2 {
+                        background-image: linear-gradient(to right bottom, $color-orange,$color-orange-dark);
+                    }
+
+                    & > div > p {
+                        font-size: 10px;
+
+                        &:not(:last-child) {
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+
+                .card__side--front{
+                    transform: rotateY(-180deg);
+                }
+
+                .card__side--back {
+                    transform: rotateY(0deg);
+                }
+            } 
+
+            &__heading {
+                position:absolute;
+                bottom: 4%;
+                left: 10%;
+                color: $color-white;
+                font-weight: 800;
+                font-size: 24px;
+            }
+        }
+    }
+}

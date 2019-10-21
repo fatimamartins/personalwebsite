@@ -12,16 +12,16 @@
 */
 
 @mixin respond($breakpoint) {
-    @if $breakpoint == tablets-port {
+    @if $breakpoint == desktop {
         @media only screen and (max-width: 991px) { @content };    
     }
-    @if $breakpoint == phone-land {
+    @if $breakpoint == tablets-port {
         @media only screen and (max-width: 767px) { @content };    
     }
-    @if $breakpoint == search-mobile {
-        @media only screen and (max-width: 550px) { @content };    
+    @if $breakpoint == phone-land {
+        @media only screen and (max-width: 668px) { @content };    
     }
     @if $breakpoint == phone-port {
-        @media only screen and (max-width: 475px) { @content };    
+        @media only screen and (max-width: 550px) { @content };    
     }
 }

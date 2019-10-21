@@ -1,0 +1,56 @@
+.homepage {
+    width: 100vw;
+    min-width: 400px;
+    height: 100vh;
+    position: relative;
+
+    & > .content-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 950px;
+
+        @include respond (desktop) {
+            width: 100%;
+        }
+
+        @include respond (tablets-port) {
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translate(0);
+            height: 100%;
+        }
+
+        & > .row > .col-md-3 {
+            background-color: $background-dark-menu;
+        }
+
+        & > .row > .col-md-9 {
+            height: 560px;
+            overflow-y: scroll;
+            background-color: $background-light;
+
+            &::-webkit-scrollbar { 
+                display: none; 
+            }
+
+            @include respond (tablets-port) {
+                height: 68vh;
+            }
+
+            .white-bar-to-continue-reading {
+                position: sticky;
+                bottom: 0;
+                z-index: 2;
+                height: 45px;
+                background-color: rgba(255,255,255, .7);
+
+                @include respond (tablets-port) {
+                    display: none!important;
+                }
+            }
+        }
+    }
+}

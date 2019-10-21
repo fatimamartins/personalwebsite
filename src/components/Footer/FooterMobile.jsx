@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Footer = () => (
-    <ul className="footer d-flex align-items-end justify-content-around">
+const FooterMobile = () => (
+    <ul className="footer-mobile d-flex align-items-center justify-content-around">
         <li>
             <a href="https://www.linkedin.com/in/fatimaluisa-martins" target="_blank">
                 <i className="fab fa-linkedin"></i>
@@ -21,4 +21,4 @@ const Footer = () => (
     </ul>
 )
 
-export default Footer;
+export default FooterMobile;

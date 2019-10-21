@@ -1,0 +1,125 @@
+.resume {
+
+    @include respond (tablets-port) {
+        height: 62vh;
+        overflow-y: scroll;
+    }
+    
+    & > h3 {
+        position: sticky;
+        top: 0px;
+        flex: 1;
+        padding: 20px 30px;
+        z-index: 2;
+    }
+
+    &--content {
+        width: 100%;
+        position: relative;
+        padding: 0 30px 20px 30px;
+
+        &::after {
+            content:"";
+            width:2px;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%); 
+            background-color: $color-white-light;
+            
+            @include respond (phone-land) {
+                left: 71px;
+            }
+        }
+
+        &-header {
+            text-align: center;
+            z-index: 1;
+            background-color: $background-light;
+
+            @include respond (phone-land) {
+                text-align: left;
+            }
+        }
+
+        &-year {
+            background-color: $color-orange;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            align-self: center;
+            z-index: 1;
+            margin: 3px 0;
+
+            @include respond (phone-land) {
+                align-self: end;
+                margin: 6px 0px 6px 15px;
+            }
+
+            & > p {
+                color: $color-white;
+                font-weight: 400;
+                font-size: 16px;
+            }
+
+            &--2018 {
+                position: absolute;
+                top: 23%;
+            }
+        }
+
+        &-item {
+            width: 43%;
+
+            @include respond (phone-land) {
+                width: -webkit-fill-available;
+                margin-left: 75px;
+            }
+
+            &--left {
+                align-self: flex-start;
+            }
+
+            &--right {
+                align-self: flex-end;
+
+                @include respond (phone-land) {
+                    align-self: flex-start;
+                }
+            }
+
+            & > ul {
+                margin-bottom: 0;
+                margin-left: 10px;
+                padding: 0;
+                list-style: none;
+
+                & > li:not(:last-child) {
+                    margin-bottom: 5px;
+                }
+
+                & > li > p {
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: $color-gray;
+                    position: relative;
+
+                    @include respond(phone-port) {
+                        font-size: 11px;
+                    }
+
+                    &::before {
+                        content: "\25A0";
+                        color: $color-gray;
+                        display: inline-block;
+                        position: absolute;
+                        left: -10px;
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+}

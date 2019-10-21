@@ -1,12 +1,15 @@
-.footer {
+.footer-mobile {
     list-style: none;
     padding: 10px 20px;
     height: 45px;
     margin-bottom: 0;
     background-color: rgba($background-dark, .8);
+    display: none!important;
 
     @include respond (tablets-port) {
-        display: none!important;
+        display: flex!important;
+        position: sticky;
+        bottom: 0;
     }
 
     & > li {
@@ -31,7 +34,6 @@
             &:hover {
                 transform: translateY(-2px);
             }
-
         }
     }
 }
