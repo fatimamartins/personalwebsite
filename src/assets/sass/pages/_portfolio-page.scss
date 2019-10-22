@@ -7,6 +7,9 @@
 
     & > h3 {
         padding: 2rem 3rem 0 3rem;
+        position: sticky;
+        top: 0px;
+        z-index: 1;
     }
 
     &__works {
@@ -61,6 +64,7 @@
         
                     .card__picture {
                         background-size: cover; 
+                        background-position: center;
                         height: 100%;                    
             
                         &-bookasleep {
@@ -69,10 +73,31 @@
         
                         &-habitects {
                             background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/habitects.png);
+                            background-position: left;
                         }
 
                         &-omnifood {
                             background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/omnifood.png);
+                        }
+
+                        &-pigGame {
+                            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/pig-game.png);
+                        }
+
+                        &-budgety {
+                            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/budgety.png);
+                        }
+
+                        &-forkify {
+                            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/forkify.png);
+                        }
+
+                        &-natours {
+                            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/natours.png);
+                        }
+
+                        &-trillo {
+                            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/trillo.png);
                         }
 
                         &-1 {
@@ -83,7 +108,7 @@
         
                 &--back {
                     transform: rotateY(180deg); 
-                    padding: 1.5rem 2rem;
+                    padding: 1.3rem 1.5rem 1rem 1.5rem;
                     color: $color-white;
                     display: flex;
                     flex-direction: column;
@@ -98,10 +123,31 @@
                     }
 
                     & > div > p {
-                        font-size: 10px;
+                        font-size: 11px;
 
                         &:not(:last-child) {
+                            margin-bottom: 10px;
+                        }
+
+                        &:last-child {
                             margin-bottom: 5px;
+                        }
+                    }
+
+                    & > div > div {
+                        margin-bottom: 10px;
+                        font-size: 11px;
+                        font-family: "Roboto";
+
+                        & > p {
+                            display: inline;
+                        }
+
+                        & > a:visited, a:link {
+                            display: inline;
+                            margin-left: 4px;
+                            color: $color-white;
+                            text-decoration: underline;
                         }
                     }
                 }
