@@ -2,7 +2,7 @@ import React from 'react';
 
 const ResumePage = () => (
     <div className="resume">
-        <h3>Resume</h3>
+        <h3>Curriculum Vitae</h3>
         <div className="resume--content d-flex flex-column">
             <div className="resume--content-header">
                 <h4>Present</h4>
