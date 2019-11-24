@@ -1,4 +1,4 @@
-Personal page.
+This is a work in progress project for my professional page.
 
 
 ### `npm start`
