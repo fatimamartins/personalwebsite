@@ -11,19 +11,16 @@ const PortfolioPage = () => (
             <div className="d-flex flex-wrap">
                 <div className="card">
                     <div className="card__side card__side--front">
-                        <div className="card__picture card__picture-bookasleep">
+                        <div className="card__picture card__picture-bookasleeper">
                             <Maintenance/>
-                            <h4 className="card__heading">Bookasleep</h4>
+                            <h4 className="card__heading">Bookasleeper</h4>
                         </div>
                     </div>
                     <div className="card__side card__side--back card__side--back-1">
                         <div>
-                            <p>E-commerce platform specialized in bathroom accessories; </p>
-                            <p>Build first version oh the platform using HTML, CSS, jQuery and Bootstrap;</p>
-                            <p>Member of the react team that implemented project with react</p>
-                            <p>Setup continuous</p>
+                            <p>Bookasleeper is a platform for buying night train tickets</p>
+                            <p>HTML, CSS, JavaScript, React, Node.js, MongoDB, Jest, Cypress Git, Tailwind , Zeplin</p>
                         </div>
-                            <a href="#" target="_blank" className="btn btn--white">Check it out</a>
                     </div>
                 </div>
                 <div className="card">
@@ -34,10 +31,8 @@ const PortfolioPage = () => (
                     </div>
                     <div className="card__side card__side--back card__side--back-2">
                         <div>
-                            <p>E-commerce platform specialized in bathroom accessories; </p>
-                            <p>Build first version oh the platform using HTML, CSS, jQuery and Bootstrap;</p>
-                            <p>Member of the react team that implemented project with react</p>
-                            <p>Setup continuous</p>
+                            <p>Habitects is an e-commerce platform for the sanitary sector in Switzerland.</p>
+                            <p>Technologies used: HTML, CSS, Sass, Bootstrap, jQuery, React, Git, Sketch.</p>
                         </div>
                         <a href="https://www.habitects.ch" target="_blank" className="btn btn--white">Check it out</a>
                     </div>
@@ -46,7 +41,7 @@ const PortfolioPage = () => (
         </div>
 
         <div className="portfolio-page__works">
-            <h4>My Works</h4>
+            <h4>School Works</h4>
             <div className="d-flex flex-wrap">
                 <div className="card">
                     <div className="card__side card__side--front">
@@ -56,12 +51,12 @@ const PortfolioPage = () => (
                     </div>
                     <div className="card__side card__side--back card__side--back-1">
                         <div>
-                            <p>Landing page for a fictional company - Omnifood - a premium food delivery service</p>
-                            <p>Introduction to HTML5, CSS3 and responsive website design</p>
-                            <p>jQuery effects like animations and sticky navigation</p>
-                            <p>Web Design basic concepts</p>
+                            <p>Landing page for a fictional company - Omnifood - a premium food delivery service;</p>
+                            <p>Introduction to HTML5, CSS3 and responsive website design;</p>
+                            <p>jQuery effects like animations and sticky navigation;</p>
+                            <p>Web Design basic concepts;</p>
                         </div>
-                            <a href="#" target="_blank" className="btn btn--white">Check it out</a>
+                        <a href="#" target="_blank" className="btn btn--white">Check it out</a>
                     </div>
                 </div>
                 <div className="card">
@@ -76,8 +71,8 @@ const PortfolioPage = () => (
                                 <p>The Pig game is a simple dice game.</p>
                                 <a href="https://en.wikipedia.org/wiki/Pig_(dice_game)" target="_blank">Find more here!</a>
                             </div>
-                            <p>Javascript in the browser: DOM Manipulation and Event Handling</p>
-                            <p>DRY principle</p>
+                            <p>Javascript in the browser: DOM Manipulation and Event Handling;</p>
+                            <p>DRY principle;</p>
                         </div>
                         <a href="#" target="_blank" className="btn btn--white">Let's play?</a>
                     </div>
@@ -119,8 +114,8 @@ const PortfolioPage = () => (
                     </div>
                     <div className="card__side card__side--back card__side--back-1">
                         <div>
-                            <p>Introduction to SASS: Variables, Nesting, Mixins, Extends, Functions and The 7-1 Pattern</p>
-                            <p>Advanced CSS: Skew, object-fit, translate, perspective, clip-path, outline-offset, filter ... </p>
+                            <p>Introduction to SASS: Variables, Nesting, Mixins, Extends, Functions and The 7-1 Pattern;</p>
+                            <p>Advanced CSS: Skew, object-fit, translate, perspective, clip-path, outline-offset, filter and others; </p>
                             <p>{`New HTML tags and attributes: <picture> <img srcset=" "> <video>`}</p>
                         </div>
                         <a href="#" target="_blank" className="btn btn--white">Check it out</a>
@@ -134,9 +129,9 @@ const PortfolioPage = () => (
                     </div>
                     <div className="card__side card__side--back card__side--back-1">
                         <div>
-                            <p>Introduction to Flexbox</p>
-                            <p>Advanced Flexbox properties for positioning and alignment</p>
-                            <p>SVG icons Vs font icons</p>
+                            <p>Introduction to Flexbox;</p>
+                            <p>Advanced Flexbox properties for positioning and alignment;</p>
+                            <p>SVG icons Vs font icons;</p>
                         </div>
                         <a href="#" target="_blank" className="btn btn--white">Check it out</a>
                     </div>

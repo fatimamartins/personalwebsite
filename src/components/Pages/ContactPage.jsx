@@ -3,24 +3,7 @@ import React from 'react';
 const ContactPage = () => (
     <div className="contact">
         <h3>Contact</h3>
-        <div className="contact__info d-flex flex-wrap">
-            <div className="contact__info--box">
-                <i className="fas fa-home"></i>
-                <p className="personal__content--box-input mb-0">Wülflingerstrasse, 8400 Winterthur</p>
-            </div>
-
-            <div className="contact__info--box">
-                <i className="fas fa-mobile-alt"></i>
-                <p className="personal__content--box-input mb-0">+41782254659</p>
-            </div>
-
-            <div className="contact__info--box">
-                <i className="fas fa-envelope"></i>
-                <p className="personal__content--box-input mb-0">fatima_luisa@outlook.com</p>
-            </div>
-        </div>
-
-        <form className="form" id="#">
+        <form className="form">
             <div className="row">
                 <div className="col-md-4">
                     <input className="form__input" type="text" id="senderName" placeholder="name"/>

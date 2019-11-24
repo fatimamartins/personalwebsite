@@ -57,12 +57,15 @@ const SkillsPage = () => (
         <div class="other-skills">
             <h4>Other Computer Skills</h4>
             <ul>
+                <li>Jest</li>
+                <li>Cypress</li>
+                <li>Git</li>
+                <li>Tailwind</li>
+                <li>Sketch</li>
+                <li>Zeplin</li>
                 <li>Postman</li>
                 <li>Compass</li>
                 <li>Studio3T</li>
-                <li>Git</li>
-                <li>Sketch</li>
-                <li>Adobe Photoshop</li>
             </ul>
         </div>
 

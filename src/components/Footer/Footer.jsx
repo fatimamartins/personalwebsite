@@ -9,12 +9,12 @@ const Footer = () => (
             
         </li>
         <li>
-            <a href="#" target="_blank">
+            <a href="https://stackexchange.com/users/17070928/f%c3%a1tima-martins" target="_blank">
                 <i className="fab fa-stack-overflow"></i>
             </a>
         </li>
         <li>
-            <a href="#" target="_blank">
+            <a href="https://github.com/fatimamartins" target="_blank">
                 <i className="fab fa-github"></i>
             </a>
         </li>

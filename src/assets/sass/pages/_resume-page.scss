@@ -66,7 +66,7 @@
 
             &--2018 {
                 position: absolute;
-                top: 23%;
+                top: 38%;
             }
         }
 
@@ -90,6 +90,17 @@
                 }
             }
 
+            & p {
+                font-size: 11px;
+                font-weight: 400;
+                color: $color-gray;
+                text-align: justify;
+
+                @include respond(phone-port) {
+                    font-size: 11px;
+                }
+            }
+
             & > ul {
                 margin-bottom: 0;
                 margin-left: 10px;
@@ -100,15 +111,12 @@
                     margin-bottom: 5px;
                 }
 
-                & > li > p {
-                    font-size: 12px;
-                    font-weight: 400;
-                    color: $color-gray;
-                    position: relative;
+                & > li:last-child {
+                    margin-bottom: 10px;
+                }
 
-                    @include respond(phone-port) {
-                        font-size: 11px;
-                    }
+                & > li > p {
+                    position: relative;
 
                     &::before {
                         content: "\25A0";
