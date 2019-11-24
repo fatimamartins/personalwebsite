@@ -1,0 +1,130 @@
+.nav {
+    flex: 1;
+    
+    & > ul {
+        width: 100%;
+        height: 45px;
+        list-style: none;
+        margin-bottom: 0;
+
+        @include respond (tablets-port) {
+            display: flex;
+        }
+
+        & > li {
+            display: inline-block;
+            width: 100%;
+            position: relative;
+            cursor: pointer;
+
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 1px;
+                visibility: hidden;
+                background-color: $color-orange;
+                transition: all .4s;
+            }
+    
+            &:hover::before {
+                visibility: visible;
+                width: 100%;
+            }
+
+            &:hover a {
+                transform: translateX(7px);
+
+                @include respond (tablets-port) {
+                    transform: translate(0px, 2px)!important;
+                }
+
+                & > .arrow-icon {
+                    transform: rotate(90deg);
+
+                    @include respond (tablets-port) {
+                        transform: rotate(-90deg);
+                    }
+                }
+            }
+            
+            & > .button--nav {
+                width: 100%;
+                height: 100%;
+                justify-content: space-between;
+                padding: 15px 20px;
+                border: none;
+                text-decoration: none;
+                color: $color-white;
+                text-align: left;
+                position: relative;
+                z-index: 1;
+                backface-visibility: hidden;
+                transition: all .2s;
+
+                @include respond (phone-land) {
+                    justify-content: center;
+                }
+
+                & > p {
+                    font-family: 'Lato';
+                    font-size: 16px;
+                    font-weight: 400; 
+                    
+                    @include respond (phone-land) {
+                        display: none!important;
+                    }
+                }
+
+                & > .arrow-icon {
+                    font-size: 16px;
+                    transition: all .4s;
+
+                    @include respond (tablets-port) {
+                        transform: rotate(90deg);
+                        transition: none;
+                    }
+
+                    @include respond (phone-land) {
+                        display: none!important;
+                    }
+                }
+
+                @include respond (tablets-port) {
+                    padding: 10px 25px;
+                }
+
+                .icon-mobile {
+                    display: none;
+
+                    @include respond (phone-land) {
+                        display: inline-block;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .active {
+        background-color: $color-orange;
+        
+        &:hover {
+            transform: translateX(0);
+
+            @include respond (tablets-port) {
+                transform: translate(0px, 0px)!important;
+            }
+        }
+    
+        & > .arrow-icon {
+            transform: rotate(90deg);            
+
+            @include respond (tablets-port) {
+                transform: rotate(-90deg)!important;
+            }
+        }
+    }
+}

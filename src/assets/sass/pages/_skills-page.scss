@@ -1,0 +1,153 @@
+.skills-page {
+
+    @include respond (tablets-port) {
+        height: 62vh;
+        overflow-y: scroll;
+    }
+
+    & > h3 {
+        padding: 2rem 3rem 0 3rem;
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+    }
+
+    .programming-skills {
+        margin-top: 3.5rem;
+        position: relative;
+        padding: 0 3rem 2rem 3rem;
+        
+        & > h4 {
+            padding-left: 35px;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: 30px;
+            top: 22px;
+            height: 1px;
+            width: 23px;
+            background: $color-orange;
+        }        
+
+        .front-end, 
+        .back-end {
+            margin-top: 3rem;
+
+            .front-end__box,
+            .back-end__box {
+                width: 554px;
+                margin: 1.5rem auto 0 auto;
+
+                @include respond (phone-land) {
+                    width: 100%;
+                }
+            }
+
+            .skills-shape {
+                width: 10rem;
+                height: 10rem;
+                background-image: linear-gradient(to right top, $color-orange-dark, $color-orange);
+                border-radius: 50%;
+                margin: 1rem;
+                position: relative;
+
+                @include respond (phone-port) {
+                    width: 8rem;
+                    height: 8rem;
+                }
+            }
+    
+            .skills-content {
+                width: 7.6rem;
+                height: 7.6rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 50%;
+                background-color: $color-white;
+
+                @include respond (phone-port) {
+                    width: 6rem;
+                    height: 6rem;
+                }
+    
+                p {
+                    font-size: 12px;
+                    font-weight: 700;
+                    color: $color-orange;
+                    text-align: center;
+
+                    @include respond (phone-port) {
+                        font-size: 11px;
+                    }
+                }                
+            }
+        }
+    }
+
+    .other-skills {
+        padding: 0 3rem 2rem 3rem;
+        position: relative;
+
+        & > h4 {
+            padding-left: 35px;
+        }
+        
+        &::before {
+            position: absolute;
+            content: "";
+            left: 30px;
+            top: 22px;
+            height: 1px;
+            width: 23px;
+            background: $color-orange;
+        }     
+
+        & > ul {
+            list-style-type: square;
+            list-style-position: inside;
+
+            & > li {
+                font-family: 'Lato';
+                font-size: 12px;
+                font-weight: 400;
+                color: $color-gray-dark;
+            }
+        }
+        
+    }
+
+    .languages {
+        padding: 0 3rem 2rem 3rem;
+        position: relative;
+
+        & > h4 {
+            padding-left: 35px;
+        }
+        
+        &::before {
+            position: absolute;
+            content: "";
+            left: 30px;
+            top: 22px;
+            height: 1px;
+            width: 23px;
+            background: $color-orange;
+        }  
+
+        & > div > div:first-child{
+            margin-right: 1rem;
+        }
+        
+        & > div p {
+            font-family: 'Lato';
+            font-size: 12px;
+            font-weight: 400;
+            color: $color-gray-dark;
+        }
+    }
+}
+

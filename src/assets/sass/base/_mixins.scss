@@ -1,0 +1,27 @@
+// MEDIA QUERY MANAGER
+/*
+0 - 475px:      Phone portrait
+475 - 550px:    Search mobile (specially created for search bar on mobile devices)
+550px - 767px   Phone landscape
+767 - 991px:    Tablet, medium devices
+991 - 1200px:   Tablets landscape
+1200px - 1283px   extra large devices
+1283px  +       -> Is where our normal style applies.
+
+1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == desktop {
+        @media only screen and (max-width: 991px) { @content };    
+    }
+    @if $breakpoint == tablets-port {
+        @media only screen and (max-width: 767px) { @content };    
+    }
+    @if $breakpoint == phone-land {
+        @media only screen and (max-width: 668px) { @content };    
+    }
+    @if $breakpoint == phone-port {
+        @media only screen and (max-width: 550px) { @content };    
+    }
+}

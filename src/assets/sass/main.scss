@@ -1,0 +1,20 @@
+@import "base/base";
+@import "base/mixins";
+@import "base/variables";
+@import "base/typography";
+
+
+@import "components/buttons";
+@import "components/svg";
+@import "components/profile-picture";
+@import "components/navbar";
+@import "components/footer";
+@import "components/footer-mobile";
+
+
+@import "pages/homepage";
+@import "pages/profile-page";
+@import "pages/skills-page";
+@import "pages/portfolio-page";
+@import "pages/resume-page";
+@import "pages/contact-page";
