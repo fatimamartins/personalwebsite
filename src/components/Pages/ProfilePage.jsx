@@ -5,9 +5,7 @@ const personalData = [
     {id:1, field: 'date of birth', value: 'april 18, 1992'},
     {id:2, field: 'email', value: 'fatima_luisa@outlook.com'},
     {id:3, field: 'linkedin', value: '/fatimaluisa-martins'},
-    {id:4, field: 'github', value: 'xxxxxxxx'},
-    // {id:4, field: 'phone', value: '+41782254659'},
-    // {id:5, field: 'address', value: 'Wülflingerstrasse, 8400 Winterthur'}
+    {id:4, field: 'github', value: '/fatimamartins'},
 ]
 
 const ProfilePage = () => (

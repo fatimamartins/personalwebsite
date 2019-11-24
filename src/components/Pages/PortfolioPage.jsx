@@ -18,8 +18,8 @@ const PortfolioPage = () => (
                     </div>
                     <div className="card__side card__side--back card__side--back-1">
                         <div>
-                            <p>Bookasleeper is a platform for buying night train tickets</p>
-                            <p>HTML, CSS, JavaScript, React, Node.js, MongoDB, Jest, Cypress Git, Tailwind , Zeplin</p>
+                            <p>Bookasleeper is a platform for buying night train tickets.</p>
+                            <p>HTML, CSS, JavaScript, React, Node.js, MongoDB, Jest, Cypress Git, Tailwind , Zeplin.</p>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ const PortfolioPage = () => (
                             <p>jQuery effects like animations and sticky navigation;</p>
                             <p>Web Design basic concepts;</p>
                         </div>
-                        <a href="#" target="_blank" className="btn btn--white">Check it out</a>
+                        {/* <a href="#" target="_blank" className="btn btn--white">Check it out</a> */}
                     </div>
                 </div>
                 <div className="card">
@@ -74,7 +74,7 @@ const PortfolioPage = () => (
                             <p>Javascript in the browser: DOM Manipulation and Event Handling;</p>
                             <p>DRY principle;</p>
                         </div>
-                        <a href="#" target="_blank" className="btn btn--white">Let's play?</a>
+                        {/* <a href="#" target="_blank" className="btn btn--white">Let's play?</a> */}
                     </div>
                 </div>
                 <div className="card">
@@ -89,7 +89,7 @@ const PortfolioPage = () => (
                             <p>Introduction to Module Pattern, Encapsulation and Event Delegation </p>
                             <p>How to read data from different HTML input types</p>
                         </div>
-                        <a href="#" target="_blank" className="btn btn--white">Check it out</a>
+                        {/* <a href="#" target="_blank" className="btn btn--white">Check it out</a> */}
                     </div>
                 </div>
                 <div className="card">
@@ -103,7 +103,7 @@ const PortfolioPage = () => (
                             <p>Forkify is a food recipe application build using food2fork API </p>
                             <p>Introduction to MCV Architecture, ES6 Modules and Classes, Local Storage, Error Handling, Application State and REST-API</p>
                         </div>
-                        <a href="#" target="_blank" className="btn btn--white">Check it out</a>
+                        {/* <a href="#" target="_blank" className="btn btn--white">Check it out</a> */}
                     </div>
                 </div>
                 <div className="card">
@@ -118,7 +118,7 @@ const PortfolioPage = () => (
                             <p>Advanced CSS: Skew, object-fit, translate, perspective, clip-path, outline-offset, filter and others; </p>
                             <p>{`New HTML tags and attributes: <picture> <img srcset=" "> <video>`}</p>
                         </div>
-                        <a href="#" target="_blank" className="btn btn--white">Check it out</a>
+                        {/* <a href="#" target="_blank" className="btn btn--white">Check it out</a> */}
                     </div>
                 </div>
                 <div className="card">
@@ -133,7 +133,7 @@ const PortfolioPage = () => (
                             <p>Advanced Flexbox properties for positioning and alignment;</p>
                             <p>SVG icons Vs font icons;</p>
                         </div>
-                        <a href="#" target="_blank" className="btn btn--white">Check it out</a>
+                        {/* <a href="#" target="_blank" className="btn btn--white">Check it out</a> */}
                     </div>
                 </div>
             </div>

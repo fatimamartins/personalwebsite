@@ -32,7 +32,7 @@ const NavBar = () => (
 
             <li>
                 <NavLink to="/resume" activeClassName="active" className="button--nav d-flex align-items-center">
-                <p>Resume</p>
+                <p>Curriculum Vitae</p>
                     <i className="arrow-icon fas fa-angle-right"></i>
                     <i class="icon-mobile far fa-file"></i>
                 </NavLink>
